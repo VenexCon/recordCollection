@@ -59,3 +59,40 @@ For this I built upon rule 3 wit hthe below code statement. Again, tested on cod
          } else if (prop == "tracks" && recordCollection[id].hasOwnProperty(prop) == ""){
            delete recordCollection[id][prop];
          }
+         
+<hr>
+
+## Update 5 - Testing the code block. 
+
+To begin i simply pasted each statement underneath eachother and ran it through FCC. One passed most failed, cool back to the drawing board, I tested each statement indiviudaly, until I realised a spelling error and i was using recordCollection vs records, I corrected this and ended up with a few more passes. 
+
+Still could not identify the error so made the decision to look at the solution on FCC, to compare what i had got to, to the actual result. First is my final code after a few bug fixes, the second is the one i reached that passed. 
+
+
+        if (prop !== "tracks" && value !== "") {
+            recordCollection[id][prop] = value;
+          } else if (prop == "tracks" && recordCollection[id].hasOwnProperty("tracks") === false ){
+            recordCollection[id][prop] = [value];
+         } else   if (prop == "tracks" && value !== ""){
+           recordCollection[id][prop].push(value);
+         } else if (prop == "tracks" && value == ""){
+           delete recordCollection[id][prop];
+         }
+
+<hr>
+         function updateRecords(records, id, prop, value) {
+            if (prop !== 'tracks' && value !== "") {
+              records[id][prop] = value;
+            } else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false ){
+              records[id][prop] = [value];
+           } else if (prop === "tracks" && value !== ""){
+            records[id][prop].push(value);
+          } else if (value === ""){
+            delete records[id][prop];
+          }
+          }
+            return records;
+          }
+<hr>
+
+##Comparison - Where did i go wrong? 
