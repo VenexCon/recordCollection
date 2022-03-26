@@ -19,7 +19,7 @@ For this rule the below code is created, by following The Odin Proejcts problem 
 
 The idea behind this is, if the value is not equal "tracks" and is not an empty string, then the code shall be updated or included. FCC has taught me that updating code, and inputting code (key Value Paris) are the same. 
 
-EDIT: I now realised that the above is null and void, as if the CD doesn't have the proeprty, one will be created, thus negating the need to check if one exists in the first place. Reviewed code below. 
+EDIT: I now realised that the above is null and void, as if the CD doesn't have the property, one will be created, thus negating the need to check if one exists in the first place. Reviewed code below. 
 
         if (prop !== "tracks" && value !== "") {
             recordCollection[id][prop] = value;
