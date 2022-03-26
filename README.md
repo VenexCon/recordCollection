@@ -25,3 +25,20 @@ EDIT: I now realised that the above is null and void, as if the CD doesn't have 
             recordCollection[id][prop] = value;
           } else return "false"
           }
+<hr> 
+
+## Rule 2 - If prop is tracks but the album doesn't have a tracks property, create an empty array and add value to it -- Done!
+
+This rule confused me somewhat as it did not click with the syntax of how to use the hasOwnProperty along with the ID number. Also in this rule i had to research about creating a key value pair, that created na array, rather than a string attribute. This is done by specifying the input in square brackets. 
+
+          if (prop == "tracks" && recordCollection[id].hasOwnProperty("tracks") != true ){
+            recordCollection[id][prop] = [value];
+         } else "null";
+         
+<hr>
+
+## Rule 3 - If prop is tracks and value isn't an empty string, add value to the end of the album's existing tracks array.
+
+This rule actually made alot of sense and was easiest to create after having completed the second rule. I tested this in code-pen with the given FCC arrays and allowed me to ensure the syntax was created correctly, and returned the correct result. I am still unsure as of yet, how how these rules will fit together but it shouldn't be too much of an issue. 
+
+
