@@ -19,35 +19,49 @@ const recordCollection = {
     }
   };
   
-  // Only change code below this line
+  // Only change code below this line - Correct code 
   function updateRecords(records, id, prop, value) {
+    if (prop !== 'tracks' && value !== "") {
+      records[id][prop] = value;
+    } else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false ){
+      records[id][prop] = [value];
+   } else if (prop === "tracks" && value !== ""){
+    records[id][prop].push(value);
+  } else if (value === ""){
+    delete records[id][prop];
+      }
+      return records;
+    }
 
 
-
-    return records;
-  }
-  
   updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 
 
   //Your function must always return the entire record collection object.
 
-//If prop is tracks and value isn't an empty string, add value to the end of the album's existing tracks array.
-//If value is an empty string, delete the given prop property from the album.
+
 
 
 //If prop isn't tracks and value isn't an empty string, update or set that album's prop to value -- Done!
           if (prop !== "tracks" && value !== "") {
             recordCollection[id][prop] = value;
-          } else "false"
+          } else 
           
-//If prop is tracks but the album doesn't have a tracks property, create an empty array and add value to it.
+//If prop is tracks but the album doesn't have a tracks property, create an empty array and add value to it -- Done!
 
-          if (prop == "tracks" && recordCollection[id].hasOwnProperty("tracks") != true ){
+          if (prop == "tracks" && recordCollection[id].hasOwnProperty("tracks") === false ){
             recordCollection[id][prop] = [value];
-         } else "null";
+         } else 
 
 
  //If prop is tracks and value isn't an empty string, add value to the end of the album's existing tracks array.
          
-         if (prop == "tracks" && recordCollection[id].hasOwnProperty(prop) !== ""){}
+         if (prop == "tracks" && value !== ""){
+           recordCollection[id][prop].push(value);
+         } else if (prop == "tracks" && value == ""){
+           delete recordCollection[id][prop];
+         }
+
+         
+
+      
