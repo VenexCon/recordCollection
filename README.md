@@ -77,10 +77,11 @@ Still could not identify the error so made the decision to look at the solution 
            recordCollection[id][prop].push(value);
          } else if (prop == "tracks" && value == ""){
            delete recordCollection[id][prop];
-         }
+         } retrun records;
 
 <hr>
-         function updateRecords(records, id, prop, value) {
+
+         
             if (prop !== 'tracks' && value !== "") {
               records[id][prop] = value;
             } else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false ){
@@ -92,7 +93,8 @@ Still could not identify the error so made the decision to look at the solution 
           }
           }
             return records;
-          }
+          
+         
 <hr>
 
-##Comparison - Where did i go wrong? 
+## Comparison - Where did i go wrong? 
