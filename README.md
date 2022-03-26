@@ -50,7 +50,7 @@ After testing the below code statement in Code-pen it seems to be good to go. Th
 <hr>
 
 
-## rule 4 - If value is an empty string, delete the given prop property from the album.
+## Rule 4 - If value is an empty string, delete the given prop property from the album.
 
 For this I built upon rule 3 wit hthe below code statement. Again, tested on code-pen to ensure it works! 
 
