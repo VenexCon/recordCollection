@@ -41,4 +41,10 @@ This rule confused me somewhat as it did not click with the syntax of how to use
 
 This rule actually made alot of sense and was easiest to create after having completed the second rule. I tested this in code-pen with the given FCC arrays and allowed me to ensure the syntax was created correctly, and returned the correct result. I am still unsure as of yet, how how these rules will fit together but it shouldn't be too much of an issue. 
 
+After testing the below code statement in Code-pen it seems to be good to go. This interprets the "prop" to ensure it is "tracks" and then if the value is not an empty string, it pushes (.push()) the value ont ot he end of the existing array. Point to note! if you use push([]), this will create a NEW array, remove the square brackets to ensure that it adds it onto the existing array. 
 
+         if (prop == "tracks" && recordCollection[id].hasOwnProperty(prop) !== ""){
+           recordCollection[id][prop].push(value);
+         }
+
+<hr>
