@@ -109,4 +109,4 @@ Line 7 - because the first if statement determines if "prop === "Tracks"", I did
 line 8 - correct apart form the Syntax. 
 
 
-Overal, i am pleased especially as it was solved using FCC & TOP's teachings. 
+Overall, I am pleased especially as it was solved using FCC & TOP's teachings. 
