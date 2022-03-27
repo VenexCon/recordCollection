@@ -98,3 +98,15 @@ Still could not identify the error so made the decision to look at the solution 
 <hr>
 
 ## Comparison - Where did i go wrong? 
+
+
+Comparing both sets of code i relaised the following mistakes, or syntax errors. 
+
+Line 1 & 2 were fine apart from some errors relating to recordCollection instead of records. 
+Line 3 - I did not use the strict "===" equality operator and therefore was left open to type conversion. 
+line 4, 5 & 6 were fine, but referenced recordCollection instead of "records". 
+Line 7 - because the first if statement determines if "prop === "Tracks"", I did not need to input this again as it was already established. 
+line 8 - correct apart form the Syntax. 
+
+
+Overal, i am pleased especially as it was solved using FCC & TOP's teachings. 
